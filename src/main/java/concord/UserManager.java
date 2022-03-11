@@ -10,4 +10,8 @@ public class UserManager
 	public void addUser(User user) {
 		UM.add(user);
 	}
+	
+	public void createUser() {
+		this.user=new User(this);
+	}
 }
