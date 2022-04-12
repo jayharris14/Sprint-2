@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="17" class="java.beans.XMLDecoder">
+ <object class="concord.ConcordServer">
+  <void property="directconversation">
+   <object class="concord.DirectConversation" id="DirectConversation0">
+    <void property="messages">
+     <void method="add">
+      <object class="concord.Message">
+       <void property="content">
+        <string>Hi</string>
+       </void>
+       <void property="user">
+        <object class="concord.User" id="User0">
+         <void property="password">
+          <string>asdf</string>
+         </void>
+         <void property="realName">
+          <string>jay</string>
+         </void>
+         <void property="role">
+          <object class="concord.Role" id="Role0">
+           <void property="addAdmin">
+            <boolean>true</boolean>
+           </void>
+           <void property="addChannel">
+            <boolean>true</boolean>
+           </void>
+           <void property="addMember">
+            <boolean>true</boolean>
+           </void>
+           <void property="addModerator">
+            <boolean>true</boolean>
+           </void>
+           <void property="inviteUser">
+            <boolean>true</boolean>
+           </void>
+           <void property="name">
+            <string>admin</string>
+           </void>
+           <void property="removeChannel">
+            <boolean>true</boolean>
+           </void>
+           <void property="removeMember">
+            <boolean>true</boolean>
+           </void>
+           <void property="removeModerator">
+            <boolean>true</boolean>
+           </void>
+          </object>
+         </void>
+         <void property="roles">
+          <void method="put">
+           <object class="concord.Server" id="Server0">
+            <void property="channels">
+             <void method="add">
+              <object class="concord.Channel">
+               <void property="name">
+                <string>activities</string>
+               </void>
+              </object>
+             </void>
+            </void>
+            <void property="name">
+             <string>school</string>
+            </void>
+            <void property="server">
+             <void method="put">
+              <object class="concord.User" id="User1">
+               <void property="password">
+                <string>qawe</string>
+               </void>
+               <void property="realName">
+                <string>qua</string>
+               </void>
+               <void property="role">
+                <object class="concord.Role" id="Role1">
+                 <void property="addMember">
+                  <boolean>true</boolean>
+                 </void>
+                 <void property="inviteUser">
+                  <boolean>true</boolean>
+                 </void>
+                 <void property="name">
+                  <string>member</string>
+                 </void>
+                 <void property="addMember">
+                  <boolean>true</boolean>
+                 </void>
+                 <void property="inviteUser">
+                  <boolean>true</boolean>
+                 </void>
+                 <void property="name">
+                  <string>member</string>
+                 </void>
+                </object>
+               </void>
+               <void property="roles">
+                <void method="put">
+                 <object idref="Server0"/>
+                 <object idref="Role1"/>
+                </void>
+               </void>
+               <void property="userName">
+                <string>quavo</string>
+               </void>
+              </object>
+              <object idref="Role1"/>
+             </void>
+            </void>
+            <void property="servermanager">
+             <object class="concord.ServerManager"/>
+            </void>
+           </object>
+           <object idref="Role0"/>
+          </void>
+         </void>
+         <void property="userName">
+          <string>jhoya101</string>
+         </void>
+        </object>
+       </void>
+      </object>
+     </void>
+    </void>
+    <void property="users">
+     <void method="add">
+      <object idref="User0"/>
+     </void>
+     <void method="add">
+      <object idref="User1"/>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void property="server">
+   <object idref="Server0"/>
+  </void>
+  <void property="user">
+   <object idref="User1"/>
+  </void>
+  <void property="visits">
+   <int>3</int>
+  </void>
+ </object>
+</java>
